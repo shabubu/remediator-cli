@@ -1,0 +1,69 @@
+{
+  "name": "remediator-cli",
+  "version": "0.0.0",
+  "description": "Node command line application to sort images and video based off of their filesystem metadata or exif/media metadata formatted from a predefined or custom template.",
+  "keywords": [
+    "remediator",
+    "exif",
+    "metadata",
+    "photo",
+    "video",
+    "image",
+    "media",
+    "sort",
+    "rename",
+    "exiftool",
+    "remediator-cli",
+    "cli"
+  ],
+  "homepage": "https://github.com/shabubu/remediator-cli#readme",
+  "bugs": {
+    "url": "https://github.com/shabubu/remediator-cli/issues"
+  },
+  "license": "MIT",
+  "author": "Jason Zajdel <zajdel.jason@gmail.com>",
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "bin": {
+    "remediator": "bin/remediator-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shabubu/remediator-cli.git"
+  },
+  "scripts": {
+    "dev": "webpack --mode=development && node bin/remediator-cli",
+    "build": "webpack --mode=production",
+    "lint": "eslint --ext .js ./app/**",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "test": "jest --config=.jestrc.json",
+    "test:ci": "jest --config=.jestrc.json --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "remediator": "^0.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "jest": "^23.5.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  }
+}
