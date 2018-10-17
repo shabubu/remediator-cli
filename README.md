@@ -1,4 +1,5 @@
 # remediator-cli
+CLI Application to sort images and video based off of their filesystem metadata or exif/media metadata formatted from a predefined or custom template.
 
 [![Travis Tests](https://travis-ci.org/shabubu/remediator-cli.svg?branch=master)](https://travis-ci.org/shabubu/remediator-cli)
 [![Appveyor Tests](https://ci.appveyor.com/api/projects/status/github/shabubu/remediator-cli?branch=master&svg=true)](https://ci.appveyor.com/project/shabubu/remediator-cli)
