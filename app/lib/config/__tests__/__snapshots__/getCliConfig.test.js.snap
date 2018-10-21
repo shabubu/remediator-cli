@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/lib/config/getCliConfig should return config when all args provided 1`] = `
+Object {
+  "batchSize": "2",
+  "format": ":foo:",
+  "mode": "copy",
+  "output": "./foo",
+  "recursive": true,
+  "skipErrors": true,
+  "source": Array [
+    "./bar",
+    "./foobar",
+  ],
+  "verbose": undefined,
+}
+`;
