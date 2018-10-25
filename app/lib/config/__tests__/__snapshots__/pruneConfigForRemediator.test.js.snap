@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/lib/config/pruneConfigForRemediator should return remediator config without cli config or undefined keys 1`] = `
+Object {
+  "batchSize": "2",
+  "format": ":foo:",
+  "mode": "copy",
+  "output": "./foo",
+  "skipErrors": false,
+  "source": Array [
+    "./bar",
+    "./foobar",
+  ],
+}
+`;
