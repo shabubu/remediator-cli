@@ -62,3 +62,17 @@ export const DEFAULT_VERBOSITY = false;
  * @type {string}
  */
 export const VERBOSITY_KEY = 'verbose';
+
+/**
+ * All Remediator config keys.
+ * @type {Array}
+ */
+export const ALL_REMEDIATOR_CONFIG_KEYS = [
+  BATCH_SIZE_KEY,
+  FORMAT_KEY,
+  MODE_KEY,
+  OUTPUT_DIRECTORY_KEY,
+  RECURSIVE_KEY,
+  SKIP_ERRORS_KEY,
+  SOURCE_DIRECTORIES_KEY,
+];
