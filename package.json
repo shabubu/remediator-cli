@@ -44,7 +44,8 @@
   },
   "dependencies": {
     "commander": "^2.19.0",
-    "remediator": "^0.3.0"
+    "exiftool-vendored": "^7.3.0",
+    "remediator": "^0.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -64,7 +65,8 @@
     "jest": "^23.5.0",
     "release-it": "^7.6.2",
     "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
   },
   "engines": {
     "node": ">=8.5.0"
