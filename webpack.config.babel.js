@@ -1,32 +1,35 @@
 import path from 'path';
+import nodeExternals from 'webpack-node-externals';
 
 export default {
-    entry: './app/index.js',
+  entry: './app/index.js',
 
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                },
-            },
-        ],
-    },
+  externals: [nodeExternals()],
 
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'remediatorCli.js',
-        library: 'remediatorCli',
-        libraryTarget: 'umd',
-    },
-
-    resolve: {
-        alias: {
-            app: path.resolve(__dirname, './app'),
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
         },
-    },
+      },
+    ],
+  },
 
-    target: 'node',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'remediatorCli.js',
+    library: 'remediatorCli',
+    libraryTarget: 'umd',
+  },
+
+  resolve: {
+    alias: {
+      app: path.resolve(__dirname, './app'),
+    },
+  },
+
+  target: 'node',
 };
