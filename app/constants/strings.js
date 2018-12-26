@@ -2,6 +2,9 @@ import {
   MODE_COPY,
   MODE_DRY,
   MODE_MOVE,
+  VERBOSITY_ALL,
+  VERBOSITY_ERROR,
+  VERBOSITY_NONE,
 } from 'app/constants/config';
 
 /**
@@ -50,4 +53,4 @@ export const SOURCE_DIRECTORIES_DESCRIPTION = 'directory(s) to get files to tran
  * Help description for verbosity.
  * @type {string}
  */
-export const VERBOSITY_DESCRIPTION = 'enable output of results to commandline';
+export const VERBOSITY_DESCRIPTION = `may run in one of three different verbosity levels: ${VERBOSITY_ALL}, ${VERBOSITY_ERROR}, or ${VERBOSITY_NONE}`;

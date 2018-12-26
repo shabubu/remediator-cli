@@ -32,6 +32,7 @@ import {
   VERBOSITY_DESCRIPTION,
   VERBOSITY_KEY,
 } from 'app/constants';
+import determineVerbosity from 'app/lib/config/determineVerbosity';
 import commander from 'commander';
 
 /**
@@ -93,6 +94,6 @@ export default function getCliConfig() {
     [RECURSIVE_KEY]: cliResults[RECURSIVE_KEY],
     [SKIP_ERRORS_KEY]: cliResults[SKIP_ERRORS_KEY],
     [SOURCE_DIRECTORIES_KEY]: cliResults[SOURCE_DIRECTORIES_KEY],
-    [VERBOSITY_KEY]: cliResults[VERBOSITY_KEY],
+    [VERBOSITY_KEY]: determineVerbosity(cliResults),
   };
 }

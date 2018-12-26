@@ -12,6 +12,6 @@ Object {
     "./bar",
     "./foobar",
   ],
-  "verbose": undefined,
+  "verbose": "all",
 }
 `;

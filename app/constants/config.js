@@ -54,16 +54,34 @@ export const DEFAULT_OUTPUT_DIRECTORY = './';
 export const DEFAULT_SOURCES_DIRECTORY = ['./'];
 
 /**
- * Default config value for Remediator CLI verbosity.
- * @type {boolean}
- */
-export const DEFAULT_VERBOSITY = false;
-
-/**
  * Config key for verbosity for Remediator CLI.
  * @type {string}
  */
 export const VERBOSITY_KEY = 'verbose';
+
+/**
+ * Verbosity option for all output.
+ * @type {string}
+ */
+export const VERBOSITY_ALL = 'all';
+
+/**
+ * Verbosity option for just error output.
+ * @type {string}
+ */
+export const VERBOSITY_ERROR = 'error';
+
+/**
+ * Verbosity option for no output.
+ * @type {string}
+ */
+export const VERBOSITY_NONE = 'none';
+
+/**
+ * Default config value for Remediator CLI verbosity.
+ * @type {string}
+ */
+export const DEFAULT_VERBOSITY = VERBOSITY_ALL;
 
 /**
  * All Remediator config keys.

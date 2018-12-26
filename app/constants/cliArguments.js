@@ -104,4 +104,4 @@ export const VERBOSITY_SHORT_ARG = '-v';
  * Commander argument string for verbosity option.
  * @type {string}
  */
-export const VERBOSITY_ARGS = `${VERBOSITY_SHORT_ARG}, --${spinalCase(VERBOSITY_KEY)}`;
+export const VERBOSITY_ARGS = `${VERBOSITY_SHORT_ARG}, --${spinalCase(VERBOSITY_KEY)} [verbosity]`;
