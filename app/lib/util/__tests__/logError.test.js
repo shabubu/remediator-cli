@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import {
   VERBOSITY_ALL,
   VERBOSITY_ERROR,
