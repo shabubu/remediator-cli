@@ -20,6 +20,13 @@ export const BATCH_SIZE_DESCRIPTION = 'amount of files to process asynchronously
 export const FORMAT_DESCRIPTION = 'template markup to use when building new file names';
 
 /**
+ * Mode output to cli string.
+ * @param   {string} mode Mode from config.
+ * @returns {string}
+ */
+export const MODE_CHOICE = mode => `Mode: ${mode}`;
+
+/**
  * Help description for mode.
  * @type {string}
  */
