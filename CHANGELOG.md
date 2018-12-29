@@ -3,6 +3,6 @@ Changelog
 
 ### 0.1.0
 
-* Release TBD
+* Release December 28, 2018
 
 Initial release
