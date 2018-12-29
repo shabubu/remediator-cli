@@ -94,13 +94,13 @@ Note: First run of Remediator-CLI may take slightly longer as [Exiftool](https:/
 </table>
 
 ### Basic Demo - No options
-<img src="https://github.com/shabubu/remediator-cli/blob/master/readmeAssets/noOptionsExample.gif" />
+<img src="https://raw.githubusercontent.com/shabubu/remediator-cli/HEAD/readmeAssets/noOptionsExample.gif" />
 
 ### Basic Demo - Copy
-<img src="https://github.com/shabubu/remediator-cli/blob/master/readmeAssets/basicCopyExample.gif" />
+<img src="https://raw.githubusercontent.com/shabubu/remediator-cli/HEAD/readmeAssets/basicCopyExample.gif" />
 
 ### Basic Demo - Move
-<img src="https://github.com/shabubu/remediator-cli/blob/master/readmeAssets/basicMoveExample.gif" />
+<img src="https://raw.githubusercontent.com/shabubu/remediator-cli/HEAD/readmeAssets/basicMoveExample.gif" />
 
 
 ## Building Format Templates
